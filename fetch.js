@@ -1,6 +1,5 @@
-fs = require("fs");
+const fs = require("fs");
 const https = require("https");
-process = require("process");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
@@ -14,15 +13,17 @@ const ERR = {
   requestFailed:
     "The request to GitHub didn't succeed. Check if GitHub token in your .env file is correct.",
   requestFailedMedium:
-    "The request to Medium didn't succeed. Check if Medium username in your .env file is correct."
+    "The request to Medium didn't succeed. Check if Medium username in your .env file is correct.",
 };
+
+// 🟢 Récupération des données GitHub
 if (USE_GITHUB_DATA === "true") {
-  if (GITHUB_USERNAME === undefined) {
+  if (!GITHUB_USERNAME || GITHUB_USERNAME.includes("YOUR")) {
     throw new Error(ERR.noUserName);
   }
 
   console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
-  var data = JSON.stringify({
+  const query = {
     query: `
 {
   user(login:"${GITHUB_USERNAME}") { 
@@ -55,75 +56,69 @@ if (USE_GITHUB_DATA === "true") {
     }
 }
 `
-  });
-  const default_options = {
+  };
+
+  const options = {
     hostname: "api.github.com",
     path: "/graphql",
     port: 443,
     method: "POST",
     headers: {
       Authorization: `Bearer ${GITHUB_TOKEN}`,
-      "User-Agent": "Node"
+      "User-Agent": "Node",
+      "Content-Type": "application/json",
     }
-  };
-
-  const req = https.request(default_options, res => {
-    let data = "";
-
-    console.log(`statusCode: ${res.statusCode}`);
-    if (res.statusCode !== 200) {
-      throw new Error(ERR.requestFailed);
-    }
-
-    res.on("data", d => {
-      data += d;
-    });
-    res.on("end", () => {
-      fs.writeFile("./public/profile.json", data, function (err) {
-        if (err) return console.log(err);
-        console.log("saved file to public/profile.json");
-      });
-    });
-  });
-
-  req.on("error", error => {
-    throw error;
-  });
-
-  req.write(data);
-  req.end();
-}
-
-if (MEDIUM_USERNAME !== undefined) {
-  console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
-  const options = {
-    hostname: "api.rss2json.com",
-    path: `/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}`,
-    port: 443,
-    method: "GET"
   };
 
   const req = https.request(options, res => {
-    let mediumData = "";
+    let body = "";
+    console.log(`GitHub API status: ${res.statusCode}`);
+    if (res.statusCode !== 200) throw new Error(ERR.requestFailed);
 
-    console.log(`statusCode: ${res.statusCode}`);
-    if (res.statusCode !== 200) {
-      throw new Error(ERR.requestMediumFailed);
-    }
-
-    res.on("data", d => {
-      mediumData += d;
-    });
+    res.on("data", chunk => (body += chunk));
     res.on("end", () => {
-      fs.writeFile("./public/blogs.json", mediumData, function (err) {
-        if (err) return console.log(err);
-        console.log("saved file to public/blogs.json");
+      fs.writeFile("./public/profile.json", body, err => {
+        if (err) console.error(err);
+        else console.log("✅ GitHub profile saved to public/profile.json");
       });
     });
   });
 
   req.on("error", error => {
-    throw error;
+    console.error("GitHub request error:", error);
+  });
+
+  req.write(JSON.stringify(query));
+  req.end();
+}
+
+// 🟡 Récupération des articles Medium (si présent)
+if (MEDIUM_USERNAME && !MEDIUM_USERNAME.includes("YOUR")) {
+  console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
+  const rssUrl = encodeURIComponent(`https://medium.com/feed/@${MEDIUM_USERNAME}`);
+  const options = {
+    hostname: "api.rss2json.com",
+    path: `/v1/api.json?rss_url=${rssUrl}`,
+    port: 443,
+    method: "GET",
+  };
+
+  const req = https.request(options, res => {
+    let body = "";
+    console.log(`Medium API status: ${res.statusCode}`);
+    if (res.statusCode !== 200) throw new Error(ERR.requestFailedMedium);
+
+    res.on("data", chunk => (body += chunk));
+    res.on("end", () => {
+      fs.writeFile("./public/blogs.json", body, err => {
+        if (err) console.error(err);
+        else console.log("✅ Medium blogs saved to public/blogs.json");
+      });
+    });
+  });
+
+  req.on("error", error => {
+    console.error("Medium request error:", error);
   });
 
   req.end();

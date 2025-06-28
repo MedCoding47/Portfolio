@@ -19,9 +19,6 @@
   margin: 0 5px;
   position: relative;
   text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
@@ -68,6 +65,10 @@
   background-color: $instagram;
 }
 
+.whatsapp i {
+  background-color: #25D366;
+}
+
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
@@ -78,7 +79,8 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
-.medium i:hover {
+.medium i:hover,
+.whatsapp i:hover {
   background-color: $textColor;
 }
 
