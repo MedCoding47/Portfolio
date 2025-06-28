@@ -1,11 +1,11 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../socialMedia/SocialMedia";
-import { contactInfo, isHireable } from "../../portfolio";
+import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 
-export default function GithubProfileCard({ prof }) {
+export default function GithubProfileCard({prof}) {
   // Determine if you're hireable
   prof.hireable = isHireable ? "Yes" : "No";
 
@@ -24,9 +24,7 @@ export default function GithubProfileCard({ prof }) {
             {prof.bio ? (
               <h2 className="bio-text">"{emoji(prof.bio)}"</h2>
             ) : (
-              <h2 className="bio-text">
-                "Développeur web Full Stack"
-              </h2>
+              <h2 className="bio-text">"Développeur web Full Stack"</h2>
             )}
 
             {/* Location if exists */}
@@ -57,7 +55,6 @@ export default function GithubProfileCard({ prof }) {
                 Open for opportunities: {prof.hireable}
               </span>
             </div>
-              
 
             {/* Social media links */}
             <SocialMedia />

@@ -13,7 +13,6 @@ export default function Footer() {
           {emoji("Made with ❤️ by MedCoding")}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          
           <a
             href="https://github.com/MedCoding47"
             target="_blank"

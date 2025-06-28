@@ -38,7 +38,7 @@ const socialMediaLinks = {
   gmail: "mohamed204ayat@gmail.com",
   gitlab: "https://gitlab.com/mohamedayat148",
   instagram: "https://www.instagram.com/_mohamed_ayat/",
-  whatsapp:  "https://wa.me/212607302999",
+  whatsapp: "https://wa.me/212607302999",
 
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -63,101 +63,102 @@ const skillsSection = {
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-softwareSkills: [
-  {
-    skillName: "html-5",
-    fontAwesomeClassname: "fab fa-html5"
-  },
-  {
-    skillName: "css3",
-    fontAwesomeClassname: "fab fa-css3-alt"
-  },
- 
-  {
-    skillName: "JavaScript",
-    fontAwesomeClassname: "fab fa-js"
-  },
-  {
-    skillName: "reactjs",
-    fontAwesomeClassname: "fab fa-react"
-  },
-  {
-    skillName: "nodejs",
-    fontAwesomeClassname: "fab fa-node"
-  },
-  
-  {
-    skillName: "npm",
-    fontAwesomeClassname: "fab fa-npm"
-  },
-  {
-    skillName: "sql-database",
-    fontAwesomeClassname: "fas fa-database"
-  },
-  {
-    skillName: "aws",
-    fontAwesomeClassname: "fab fa-aws"
-  },
-  {
-    skillName: "python",
-    fontAwesomeClassname: "fab fa-python"
-  },
-  {
-    skillName: "docker",
-    fontAwesomeClassname: "fab fa-docker"
-  },
-  {
-    skillName: "mongodb",
-    fontAwesomeClassname: "fas fa-leaf" // Font Awesome n’a pas d’icône officielle MongoDB, donc 'leaf' est une alternative
-  },
-  {
-    skillName: "laravel",
-    fontAwesomeClassname: "fab fa-laravel" // Nécessite Font Awesome Pro
-  },
-  {
-    skillName: "bootstrap",
-    fontAwesomeClassname: "fab fa-bootstrap"
-  },
-  {
-    skillName: "tailwind",
-    fontAwesomeClassname: "fas fa-wind" // Pas d’icône officielle Tailwind dans Font Awesome ; alternative possible
-  },
-  {
-    skillName: "vite",
-    fontAwesomeClassname: "fas fa-bolt" // Pas d’icône officielle pour Vite non plus
-  },
-  {
-    skillName: "jsx",
-    fontAwesomeClassname: "fas fa-code" // JSX n’a pas d’icône dédiée, on utilise 'code'
-  }
-],
-display: true
- // Set false to hide this section, defaults to true
+  softwareSkills: [
+    {
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
+
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+
+    {
+      skillName: "npm",
+      fontAwesomeClassname: "fab fa-npm"
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "mongodb",
+      fontAwesomeClassname: "fas fa-leaf" // Font Awesome n’a pas d’icône officielle MongoDB, donc 'leaf' est une alternative
+    },
+    {
+      skillName: "laravel",
+      fontAwesomeClassname: "fab fa-laravel" // Nécessite Font Awesome Pro
+    },
+    {
+      skillName: "bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
+    {
+      skillName: "tailwind",
+      fontAwesomeClassname: "fas fa-wind" // Pas d’icône officielle Tailwind dans Font Awesome ; alternative possible
+    },
+    {
+      skillName: "vite",
+      fontAwesomeClassname: "fas fa-bolt" // Pas d’icône officielle pour Vite non plus
+    },
+    {
+      skillName: "jsx",
+      fontAwesomeClassname: "fas fa-code" // JSX n’a pas d’icône dédiée, on utilise 'code'
+    }
+  ],
+  display: true
+  // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
- schools: [
-  {
-    schoolName: "Institut spécialisé de gestion et informatique (Centre Philips - Ofppt)",
-    logo: require("./assets/images/ofppt.png"), // Replace with your actual logo file if available
-    subHeader: "Technicien spécialisé en développement digital option Full Stack",
-    duration: "2023 - 2025",
-    desc: "",
-    descBullets: []
-  },
-  {
-    schoolName: "Lycée Tarik Ibnou Zyad, Casablanca",
-    logo: require("./assets/images/tariq.png"), // Replace with your actual logo file if available
-    subHeader: "Baccalauréat en Sciences Physique",
-    duration: "2021 - 2022",
-    desc: "",
-    descBullets: []
-  }
-]
-
+  schools: [
+    {
+      schoolName:
+        "Institut spécialisé de gestion et informatique (Centre Philips - Ofppt)",
+      logo: require("./assets/images/ofppt.png"), // Replace with your actual logo file if available
+      subHeader:
+        "Technicien spécialisé en développement digital option Full Stack",
+      duration: "2023 - 2025",
+      desc: "",
+      descBullets: []
+    },
+    {
+      schoolName: "Lycée Tarik Ibnou Zyad, Casablanca",
+      logo: require("./assets/images/tariq.png"), // Replace with your actual logo file if available
+      subHeader: "Baccalauréat en Sciences Physique",
+      duration: "2021 - 2022",
+      desc: "",
+      descBullets: []
+    }
+  ]
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -201,7 +202,6 @@ const workExperiences = {
   ]
 };
 
-
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
@@ -218,7 +218,8 @@ const bigProjects = {
     {
       image: require("./assets/images/al.png"), // Replace with actual logo or relevant image
       projectName: "Plateforme d’Adoption des Animaux",
-      projectDesc: "Site web de gestion d’adoption d’animaux (chiens, chats, poissons, oiseaux, rongeurs), avec React, Laravel, MySQL, API.",
+      projectDesc:
+        "Site web de gestion d’adoption d’animaux (chiens, chats, poissons, oiseaux, rongeurs), avec React, Laravel, MySQL, API.",
       footerLink: [
         {
           name: "Voir le Projet",
@@ -229,7 +230,8 @@ const bigProjects = {
     {
       image: require("./assets/images/ele.jpg"), // Replace with actual logo or relevant image
       projectName: "Plateforme de Location de Véhicules Électriques",
-      projectDesc: "Plateforme de réservation et de gestion de véhicules (autos, vélos) utilisant Vite, Laravel et MySQL.",
+      projectDesc:
+        "Plateforme de réservation et de gestion de véhicules (autos, vélos) utilisant Vite, Laravel et MySQL.",
       footerLink: [
         {
           name: "Voir le Projet",
@@ -241,11 +243,11 @@ const bigProjects = {
   display: true
 };
 
-
 // Achievement Section
 const achievementSection = {
   title: emoji("Achievements and Certifications 🏆"),
-  subtitle: "Certifications and academic accomplishments that highlight my development journey.",
+  subtitle:
+    "Certifications and academic accomplishments that highlight my development journey.",
 
   achievementsCards: [
     {
@@ -330,12 +332,11 @@ const resumeSection = {
 
 const contactInfo = {
   title: "Reach Out to me!",
-  subtitle: "Discutons d’un projet ou envoyez-moi un message. Ma boîte est ouverte !",
+  subtitle:
+    "Discutons d’un projet ou envoyez-moi un message. Ma boîte est ouverte !",
   number: "+212607302999",
   email_address: "mohamed204ayat@gmail.com"
 };
-
-
 
 const twitterDetails = {
   userName: "", // Add your username without "@"
@@ -343,8 +344,6 @@ const twitterDetails = {
 };
 
 const isHireable = true;
-
-
 
 export {
   illustration,

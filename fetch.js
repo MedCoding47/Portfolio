@@ -13,7 +13,7 @@ const ERR = {
   requestFailed:
     "The request to GitHub didn't succeed. Check if GitHub token in your .env file is correct.",
   requestFailedMedium:
-    "The request to Medium didn't succeed. Check if Medium username in your .env file is correct.",
+    "The request to Medium didn't succeed. Check if Medium username in your .env file is correct."
 };
 
 // 🟢 Récupération des données GitHub
@@ -66,7 +66,7 @@ if (USE_GITHUB_DATA === "true") {
     headers: {
       Authorization: `Bearer ${GITHUB_TOKEN}`,
       "User-Agent": "Node",
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     }
   };
 
@@ -95,12 +95,14 @@ if (USE_GITHUB_DATA === "true") {
 // 🟡 Récupération des articles Medium (si présent)
 if (MEDIUM_USERNAME && !MEDIUM_USERNAME.includes("YOUR")) {
   console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
-  const rssUrl = encodeURIComponent(`https://medium.com/feed/@${MEDIUM_USERNAME}`);
+  const rssUrl = encodeURIComponent(
+    `https://medium.com/feed/@${MEDIUM_USERNAME}`
+  );
   const options = {
     hostname: "api.rss2json.com",
     path: `/v1/api.json?rss_url=${rssUrl}`,
     port: 443,
-    method: "GET",
+    method: "GET"
   };
 
   const req = https.request(options, res => {
