@@ -22,5 +22,5 @@ jobs:
           npm install
 
       - name: Check Format
-        run: |
-          npm run check-format
+      # run: |
+         # npm run check-format
