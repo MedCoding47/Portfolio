@@ -1,34 +1,27 @@
 import React from "react";
 import "./GithubProfileCard.scss";
-import SocialMedia from "../socialMedia/SocialMedia";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
 
 export default function GithubProfileCard({prof}) {
-  // Determine if you're hireable
-  prof.hireable = isHireable ? "Yes" : "No";
-
+  if (isHireable) {
+    prof.hireable = "Yes";
+  } else {
+    prof.hireable = "No";
+  }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
         <h1 className="prof-title">Reach Out to me!</h1>
-
         <div className="row">
           <div className="main-content-profile">
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>
-
-            {/* Bio or fallback message */}
-            {prof.bio ? (
-              <h2 className="bio-text">"{emoji(prof.bio)}"</h2>
-            ) : (
-              <h2 className="bio-text">"Développeur web Full Stack"</h2>
-            )}
-
-            {/* Location if exists */}
-            {prof.location && (
+            <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
+            {prof.location !== null && (
               <div className="location-div">
                 <span className="desc-prof">
                   <svg
@@ -48,19 +41,13 @@ export default function GithubProfileCard({prof}) {
                 </span>
               </div>
             )}
-
-            {/* Open to opportunities */}
             <div className="opp-div">
               <span className="desc-prof">
                 Open for opportunities: {prof.hireable}
               </span>
             </div>
-
-            {/* Social media links */}
             <SocialMedia />
           </div>
-
-          {/* Avatar image */}
           <div className="image-content-profile">
             <img
               src={prof.avatarUrl}

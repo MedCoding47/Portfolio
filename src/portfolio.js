@@ -331,13 +331,8 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: "Reach Out to me!",
-  subtitle:
-    "Discutons d’un projet ou envoyez-moi un message. Ma boîte est ouverte !",
-  number: "+212607302999",
-  email_address: "mohamed204ayat@gmail.com"
+ 
 };
-
 const twitterDetails = {
   userName: "", // Add your username without "@"
   display: false // Set true if you want to show Twitter feed
