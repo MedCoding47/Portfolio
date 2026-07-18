@@ -15,25 +15,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22.x
 
-      - name: Show environment
-        run: node --version && npm --version
-
       - name: Install
-        run: npm ci 2>&1
+        run: npm install
 
       - name: Build
-        run: npm run build 2>&1
-
-      - name: List dist
-        run: ls -la dist/
+        run: npm run build
 
       - name: Deploy to gh-pages
         run: |
