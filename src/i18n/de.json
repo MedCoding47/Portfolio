@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "education": "Bildung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Ayat Mohamed",
+    "role": "Softwareentwickler & IT-Support",
+    "subtitle": "Ich entwickle Enterprise-Apps bei <strong>INVOLYS</strong> mit .NET & React für Kunden wie CNSS und AMDIE. Aktuell baue ich <strong>Nino</strong>, eine SaaS-Plattform für Tieradoptionen.",
+    "badge": "Suche Möglichkeiten in Deutschland",
+    "badgeSub": "Deutsch B1 (OSD-zertifiziert)",
+    "cta_projects": "Projekte Ansehen",
+    "cta_contact": "Kontaktieren",
+    "cta_resume": "Lebenslauf Herunterladen",
+    "available": "Stellensuche aktiv"
+  },
+  "about": {
+    "title": "Über Mich",
+    "p1": "Hey! Ich bin Ayat, Entwickler bei <strong>INVOLYS</strong> in Casablanca. Tagsüber arbeite ich an Enterprise-Webapps für Institutionen wie CNSS, AMDIE, ONHYM und AMMC — hauptsächlich mit <strong>.NET</strong> auf dem Backend und <strong>React</strong> auf dem Frontend.",
+    "p2": "Neben der Arbeit entwickle ich <strong>Nino</strong> — eine Multi-Tenant-SaaS, die Tierheime mit Adoptierenden verbindet. Das Projekt hat mir mehr über Systemdesign, Auth und Zahlungen beigebracht als jeder Kurs.",
+    "p3": "Ich möchte nach Deutschland umziehen und mich einem Team anschließen, in dem ich wachsen kann. Ich habe B1-Deutsch (OSD-Zertifikat) und arbeite an B2. Wenn Sie einstellen, lassen Sie uns reden.",
+    "stats": {
+      "experience": "2+",
+      "experienceLabel": "Jahre Erfahrung",
+      "projects": "4+",
+      "projectsLabel": "Projekte Entwickelt",
+      "clients": "4+",
+      "clientsLabel": "Enterprise-Kunden",
+      "german": "B1",
+      "germanLabel": "Deutsch-Niveau"
+    }
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "subtitle": "Mein beruflicher Werdegang in der Enterprise-Software- und Webentwicklung.",
+    "jobs": [
+      {
+        "role": "Softwareentwickler & IT-Support",
+        "company": "INVOLYS",
+        "date": "2025 — Heute",
+        "current": true,
+        "description": "Entwicklung von Enterprise-Webanwendungen für bedeutende marokkanische Institutionen. Full-Stack-Entwicklung mit .NET Backend und React Frontend.",
+        "bullets": [
+          "Entwicklung und Wartung von Enterprise-Webanwendungen für CNSS, AMDIE, ONHYM und AMMC",
+          "Full-Stack-Entwicklung mit .NET, React, SQL Server und Oracle Datenbanken",
+          "Zusammenarbeit mit funktionsübergreifenden Teams zur Bereitstellung skalierbarer Softwarelösungen",
+          "Technischer Support und Fehlerbehebung für Produktionssysteme"
+        ],
+        "tags": [".NET", "React", "SQL Server", "Oracle", "C#"]
+      },
+      {
+        "role": "Webentwickler Praktikant",
+        "company": "Animal Planet",
+        "date": "Jan 2025 — Mär 2025",
+        "current": false,
+        "description": "Entwicklung einer vollständigen Tieradoptions-Website mit React Frontend, Laravel Backend und MySQL Datenbank.",
+        "bullets": [
+          "Entwicklung einer Tieradoptionsplattform für Hunde, Katzen, Vögel und Nagetiere",
+          "Aufbau einer intuitiven Benutzeroberfläche zum Durchsuchen, Finden und Adoptieren von Tieren",
+          "Integration von Bestandsverwaltung und E-Commerce-Funktionen für den Shop-Bereich",
+          "Arbeit mit RESTful APIs und Datenbankdesign"
+        ],
+        "tags": ["React", "Laravel", "MySQL", "PHP", "REST API"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Ausgewählte Arbeiten, die meine Fähigkeiten in der Full-Stack-Entwicklung und Enterprise-Software zeigen.",
+    "viewProject": "Projekt Ansehen",
+    "viewCode": "Code Ansehen",
+    "featured": "Hervorgehoben",
+    "items": [
+      {
+        "name": "Nino — Tieradoptions-SaaS",
+        "description": "Eine Multi-Tenant-SaaS-Plattform, die Tierheime mit Adoptierenden verbindet. Features: rollenbasierte Dashboards, Tierbrowser mit Filtern, Tierarzt-Buchung, Spenden-System und Echtzeit-Analysen.",
+        "tags": ["ASP.NET 8", "React", "SQL Server", "Stripe", "Vite"],
+        "github": "https://github.com/MedCoding47/saas_stay_soon",
+        "featured": true
+      },
+      {
+        "name": "Enterprise-Anwendungen @ INVOLYS",
+        "description": "Webanwendungen für bedeutende marokkanische Institutionen (CNSS, AMDIE, ONHYM, AMMC). Enterprise-Software mit komplexem Datenmanagement und Berichterstattung.",
+        "tags": [".NET", "React", "SQL Server", "Oracle"],
+        "github": null,
+        "featured": false
+      },
+      {
+        "name": "Animal Planet Adoptionsplattform",
+        "description": "Vollständige Tieradoptions-Website mit Anzeigenverwaltung, benutzerfreundlichem Browsing, E-Commerce-Shop und mehrstufiger Tierunterstützung.",
+        "tags": ["React", "Laravel", "MySQL", "PHP"],
+        "github": "https://github.com/MedCoding47/pet",
+        "featured": false
+      },
+      {
+        "name": "Elektrofahrzeug-Vermietung",
+        "description": "Webplattform zur Vermietung von Elektrofahrzeugen inklusive Autos und Fahrrädern. mit Buchungssystem, Fahrzeugverwaltung und responsive Design.",
+        "tags": ["Vite", "Laravel", "MySQL"],
+        "github": "https://github.com/souyousy/location_voiture",
+        "featured": false
+      }
+    ]
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "subtitle": "Technologien und Tools, mit denen ich täglich robuste Softwarelösungen entwickle.",
+    "categories": [
+      {
+        "name": "Frontend",
+        "icon": "frontend",
+        "skills": [
+          { "name": "React", "level": 90 },
+          { "name": "JavaScript", "level": 88 },
+          { "name": "TypeScript", "level": 75 },
+          { "name": "HTML5", "level": 95 },
+          { "name": "CSS3 / SCSS", "level": 90 },
+          { "name": "Tailwind CSS", "level": 85 },
+          { "name": "Vite", "level": 80 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "icon": "backend",
+        "skills": [
+          { "name": ".NET / C#", "level": 85 },
+          { "name": "Node.js", "level": 75 },
+          { "name": "PHP / Laravel", "level": 80 },
+          { "name": "Angular", "level": 70 },
+          { "name": "Python", "level": 70 },
+          { "name": "REST APIs", "level": 85 }
+        ]
+      },
+      {
+        "name": "Datenbank",
+        "icon": "database",
+        "skills": [
+          { "name": "SQL Server", "level": 85 },
+          { "name": "Oracle", "level": 75 },
+          { "name": "MySQL", "level": 85 },
+          { "name": "MongoDB", "level": 65 }
+        ]
+      },
+      {
+        "name": "DevOps & Tools",
+        "icon": "devops",
+        "skills": [
+          { "name": "Docker", "level": 70 },
+          { "name": "AWS", "level": 60 },
+          { "name": "Git / GitHub", "level": 90 },
+          { "name": "Agile / Scrum", "level": 80 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Bildung",
+    "subtitle": "Mein akademischer Hintergrund.",
+    "schools": [
+      {
+        "school": "Institut Spécialisé de Gestion et Informatique",
+        "location": "Centre Philips — OFPPT, Casablanca",
+        "degree": "Technicien Spécialisé en Développement Digital — Full Stack",
+        "date": "2023 — 2025",
+        "logo": "ofppt"
+      },
+      {
+        "school": "Lycée Tarik Ibnou Zyad",
+        "location": "Casablanca",
+        "degree": "Baccalauréat en Sciences Physique",
+        "date": "2021 — 2022",
+        "logo": "tariq"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Schreib Mich An",
+    "subtitle": "Ich suche Softwareentwicklungs-Stellen in Deutschland — remote oder vor Ort. Haben Sie eine Stelle, ein Projekt oder wollen Sie einfach über Tech quatschen? Schreiben Sie mir.",
+    "email": "E-Mail Senden",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "availability": "Offen für Möglichkeiten in Deutschland",
+    "location": "Casablanca, Marokko",
+    "locationTarget": "Ziel: Deutschland"
+  },
+  "footer": {
+    "built": "Gestaltet & Entwickelt von Ayat Mohamed",
+    "tagline": "Erstellt in Marokko | Gebaut für Deutschland"
+  },
+  "language": {
+    "en": "EN",
+    "de": "DE"
+  }
+}

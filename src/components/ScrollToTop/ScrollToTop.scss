@@ -1,0 +1,23 @@
+.scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(221, 0, 0, 0.3);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  z-index: 900;
+}
+
+.scroll-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(221, 0, 0, 0.4);
+}

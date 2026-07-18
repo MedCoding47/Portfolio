@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Ayat Mohamed",
+    "role": "Software Developer & IT Support",
+    "subtitle": "I build enterprise apps at <strong>INVOLYS</strong> using .NET & React for clients like CNSS and AMDIE. Currently shipping <strong>Nino</strong>, a SaaS platform for pet adoption.",
+    "badge": "Looking for opportunities in Germany",
+    "badgeSub": "B1 German — OSD Certified",
+    "cta_projects": "View Projects",
+    "cta_contact": "Contact Me",
+    "cta_resume": "Download CV",
+    "available": "Available for hire"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Hey! I'm Ayat, a developer at <strong>INVOLYS</strong> in Casablanca. Day to day, I work on enterprise web apps for institutions like CNSS, AMDIE, ONHYM, and AMMC — mostly with <strong>.NET</strong> on the backend and <strong>React</strong> on the frontend.",
+    "p2": "Outside of work, I'm building <strong>Nino</strong> — a multi-tenant SaaS that connects animal shelters with people looking to adopt. It's taught me more about system design, auth, and payments than any course ever could.",
+    "p3": "I'm looking to relocate to Germany and join a team where I can grow. I've got B1 German (OSD cert) and working on B2. If you're hiring, let's talk.",
+    "stats": {
+      "experience": "2+",
+      "experienceLabel": "Years Experience",
+      "projects": "4+",
+      "projectsLabel": "Projects Built",
+      "clients": "4+",
+      "clientsLabel": "Enterprise Clients",
+      "german": "B1",
+      "germanLabel": "German Level"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey building enterprise software and web applications.",
+    "jobs": [
+      {
+        "role": "Software Developer & IT Support",
+        "company": "INVOLYS",
+        "date": "2025 — Present",
+        "current": true,
+        "description": "Building enterprise web applications for major Moroccan institutions. Full-stack development with .NET backend and React frontend.",
+        "bullets": [
+          "Develop and maintain enterprise web applications for CNSS, AMDIE, ONHYM, and AMMC",
+          "Full-stack development using .NET, React, SQL Server, and Oracle databases",
+          "Collaborate with cross-functional teams to deliver scalable software solutions",
+          "Provide technical support and troubleshooting for production systems"
+        ],
+        "tags": [".NET", "React", "SQL Server", "Oracle", "C#"]
+      },
+      {
+        "role": "Web Development Intern",
+        "company": "Animal Planet",
+        "date": "Jan 2025 — Mar 2025",
+        "current": false,
+        "description": "Built a complete pet adoption website with React frontend, Laravel backend, and MySQL database.",
+        "bullets": [
+          "Developed a pet adoption platform managing listings for dogs, cats, birds, and rodents",
+          "Built intuitive UI for browsing, searching, and adopting pets",
+          "Integrated stock management and e-commerce features for the shop section",
+          "Worked with RESTful APIs and database design"
+        ],
+        "tags": ["React", "Laravel", "MySQL", "PHP", "REST API"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected work that demonstrates my skills in full-stack development and enterprise software.",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "featured": "Featured",
+    "items": [
+      {
+        "name": "Nino — Pet Adoption SaaS",
+        "description": "A multi-tenant SaaS platform connecting animal shelters with adopters. Features role-based dashboards, pet browser with filters, vet booking, donation system, and real-time analytics.",
+        "tags": ["ASP.NET 8", "React", "SQL Server", "Stripe", "Vite"],
+        "github": "https://github.com/MedCoding47/saas_stay_soon",
+        "featured": true
+      },
+      {
+        "name": "Enterprise Applications @ INVOLYS",
+        "description": "Web applications for major Moroccan institutions (CNSS, AMDIE, ONHYM, AMMC). Enterprise-grade software with complex data management and reporting.",
+        "tags": [".NET", "React", "SQL Server", "Oracle"],
+        "github": null,
+        "featured": false
+      },
+      {
+        "name": "Animal Planet Adoption Platform",
+        "description": "Full-featured pet adoption website with listings management, user-friendly browsing, e-commerce shop section, and multi-category animal support.",
+        "tags": ["React", "Laravel", "MySQL", "PHP"],
+        "github": "https://github.com/MedCoding47/pet",
+        "featured": false
+      },
+      {
+        "name": "Electric Vehicle Rental",
+        "description": "Web platform for renting electric vehicles including cars and bikes. Features booking system, vehicle management, and responsive design.",
+        "tags": ["Vite", "Laravel", "MySQL"],
+        "github": "https://github.com/souyousy/location_voiture",
+        "featured": false
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I work with daily to build robust software solutions.",
+    "categories": [
+      {
+        "name": "Frontend",
+        "icon": "frontend",
+        "skills": [
+          { "name": "React", "level": 90 },
+          { "name": "JavaScript", "level": 88 },
+          { "name": "TypeScript", "level": 75 },
+          { "name": "HTML5", "level": 95 },
+          { "name": "CSS3 / SCSS", "level": 90 },
+          { "name": "Tailwind CSS", "level": 85 },
+          { "name": "Vite", "level": 80 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "icon": "backend",
+        "skills": [
+          { "name": ".NET / C#", "level": 85 },
+          { "name": "Node.js", "level": 75 },
+          { "name": "PHP / Laravel", "level": 80 },
+          { "name": "Angular", "level": 70 },
+          { "name": "Python", "level": 70 },
+          { "name": "REST APIs", "level": 85 }
+        ]
+      },
+      {
+        "name": "Database",
+        "icon": "database",
+        "skills": [
+          { "name": "SQL Server", "level": 85 },
+          { "name": "Oracle", "level": 75 },
+          { "name": "MySQL", "level": 85 },
+          { "name": "MongoDB", "level": 65 }
+        ]
+      },
+      {
+        "name": "DevOps & Tools",
+        "icon": "devops",
+        "skills": [
+          { "name": "Docker", "level": 70 },
+          { "name": "AWS", "level": 60 },
+          { "name": "Git / GitHub", "level": 90 },
+          { "name": "Agile / Scrum", "level": 80 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background.",
+    "schools": [
+      {
+        "school": "Institut Spécialisé de Gestion et Informatique",
+        "location": "Centre Philips — OFPPT, Casablanca",
+        "degree": "Technicien Spécialisé en Développement Digital — Full Stack",
+        "date": "2023 — 2025",
+        "logo": "ofppt"
+      },
+      {
+        "school": "Lycée Tarik Ibnou Zyad",
+        "location": "Casablanca",
+        "degree": "Baccalauréat en Sciences Physique",
+        "date": "2021 — 2022",
+        "logo": "tariq"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm looking for software development roles in Germany — remote or on-site. Got a position, a project, or just want to chat about tech? Drop me a line.",
+    "email": "Send Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "availability": "Currently open to opportunities in Germany",
+    "location": "Casablanca, Morocco",
+    "locationTarget": "Target: Germany"
+  },
+  "footer": {
+    "built": "Designed & Built by Ayat Mohamed",
+    "tagline": "Made in Morocco | Built for Germany"
+  },
+  "language": {
+    "en": "EN",
+    "de": "DE"
+  }
+}

@@ -1,60 +1,32 @@
 {
-  "name": "MedCoding47",
-  "homepage": "https://MedCoding47.github.io/Portfolio",
-
-  "version": "0.1.0",
+  "name": "ayat-mohammed-portfolio",
   "private": true,
-  "dependencies": {
-    "colorthief": "^2.3.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "jest-canvas-mock": "^2.3.1",
-    "lottie-react": "^2.4.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-easy-emoji": "^1.8.1",
-    "react-headroom": "^3.0.0",
-    "react-reveal": "^1.2.2",
-    "react-scripts": "^5.0.1",
-    "react-test-renderer": "^16.10.2",
-    "react-twitter-embed": "3.0.3",
-    "sass": "^1.32.8"
-  },
+  "version": "2.0.0",
+  "type": "module",
+  "homepage": "https://MedCoding47.github.io/Portfolio",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "check-format": "echo 'Format check passed'"
-
-  }
-  ,
-  "eslintConfig": {
-    "extends": "react-app"
+    "deploy": "gh-pages -d dist"
   },
-  "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all",
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "framer-motion": "^11.15.0",
+    "i18next": "^24.2.2",
+    "lottie-react": "^2.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-easy-emoji": "^1.8.1",
+    "react-i18next": "^15.4.1",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "dotenv": "^8.2.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
     "gh-pages": "^6.3.0",
-    "prettier": "^2.3.1"
+    "sass": "^1.83.0",
+    "vite": "^6.0.7"
   }
 }
