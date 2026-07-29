@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./SplashScreen.scss";
 
 const NAME = "Ayat Mohamed".split("");
-const ROLE = "Software Developer";
+const ROLE = "Softwareentwickler";
 
 const letterVariants = {
   hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
@@ -16,17 +16,30 @@ const letterVariants = {
 };
 
 export default function SplashScreen({ onFinish }) {
-  const [phase, setPhase] = useState("enter");
+  const [phase, setPhase] = useState("closed");
   const [showName, setShowName] = useState(false);
   const [showRole, setShowRole] = useState(false);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setShowName(true), 800);
-    const t2 = setTimeout(() => setShowRole(true), 1800);
-    const t3 = setTimeout(() => setPhase("exit"), 3200);
-    const t4 = setTimeout(() => onFinish(), 3800);
-    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
+    // Cycle 1: open
+    const t1 = setTimeout(() => setPhase("open1"), 400);
+    // Cycle 1: close
+    const t2 = setTimeout(() => setPhase("closed1"), 800);
+    // Cycle 2: open
+    const t3 = setTimeout(() => setPhase("open2"), 1100);
+    // Cycle 2: close + reveal name
+    const t4 = setTimeout(() => { setPhase("reveal"); setShowName(true); }, 1600);
+    // Role appears
+    const t5 = setTimeout(() => setShowRole(true), 2500);
+    // Exit
+    const t6 = setTimeout(() => setPhase("exit"), 3600);
+    const t7 = setTimeout(() => onFinish(), 4200);
+
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); clearTimeout(t6); clearTimeout(t7); };
   }, [onFinish]);
+
+  const isOpen = phase === "open1" || phase === "open2";
+  const isReveal = phase === "reveal" || phase === "exit";
 
   return (
     <AnimatePresence>
@@ -42,11 +55,18 @@ export default function SplashScreen({ onFinish }) {
             <div className="splash__braces">
               <motion.span
                 className="splash__brace splash__brace--left"
-                initial={{ x: 0, scale: 1.5 }}
-                animate={showName ? { x: -120, scale: 1 } : { x: 0, scale: 1 }}
-                transition={{ type: "spring", stiffness: 120, damping: 14, delay: 0.1 }}
+                animate={{ x: (isOpen || isReveal) ? -130 : 0 }}
+                transition={{ type: "spring", stiffness: 160, damping: 16 }}
               >
-                {"{"}
+                {"<"}
+              </motion.span>
+
+              <motion.span
+                className="splash__slash"
+                animate={{ x: (isOpen || isReveal) ? -60 : 0, opacity: (isOpen || isReveal) ? 1 : 1 }}
+                transition={{ type: "spring", stiffness: 160, damping: 16 }}
+              >
+                {"/"}
               </motion.span>
 
               <div className="splash__name-wrapper">
@@ -66,11 +86,10 @@ export default function SplashScreen({ onFinish }) {
 
               <motion.span
                 className="splash__brace splash__brace--right"
-                initial={{ x: 0, scale: 1.5 }}
-                animate={showName ? { x: 120, scale: 1 } : { x: 0, scale: 1 }}
-                transition={{ type: "spring", stiffness: 120, damping: 14, delay: 0.1 }}
+                animate={{ x: (isOpen || isReveal) ? 130 : 0 }}
+                transition={{ type: "spring", stiffness: 160, damping: 16 }}
               >
-                {"}"}
+                {">"}
               </motion.span>
             </div>
 

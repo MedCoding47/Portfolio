@@ -22,23 +22,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
   }
 
   &__braces {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     position: relative;
     height: 80px;
   }
 
   &__brace {
-    font-size: 72px;
-    font-weight: 900;
+    font-size: 64px;
+    font-weight: 400;
     font-family: "JetBrains Mono", monospace;
     line-height: 1;
     color: #FFCC00;
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__slash {
+    font-size: 64px;
+    font-weight: 400;
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1;
+    color: #DD0000;
     display: flex;
     align-items: center;
     user-select: none;
@@ -63,10 +74,10 @@
     font-weight: 500;
     font-family: "JetBrains Mono", monospace;
     color: #FFCC00;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     margin: 0;
     opacity: 0;
-    text-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+    text-shadow: 0 0 20px rgba(255, 204, 0, 0.3), 0 0 40px rgba(255, 204, 0, 0.15);
   }
 }
