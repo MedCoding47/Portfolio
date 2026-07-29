@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
 import { useMouseParallax } from "../../hooks/useAnimations";
-import photo from "../../assets/images/photo-optimized.webp";
+import photo from "../../assets/images/photo-optimized.png";
 import "./Hero.scss";
 
 const container = {
