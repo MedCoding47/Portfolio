@@ -12,6 +12,7 @@ import Education from "./containers/Education/Education";
 import Contact from "./containers/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { ScrollProgress, Marquee } from "./components/Animated/Animated";
 import "./App.scss";
 
 function AppContent() {
@@ -37,6 +38,7 @@ function AppContent() {
   return (
     <>
       {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
+      <ScrollProgress />
       <div className={`app ${isDark ? "app--dark" : ""}`}>
         <Header />
         <main>
@@ -44,6 +46,7 @@ function AppContent() {
           <About />
           <Experience />
           <Projects />
+          <Marquee text="React • TypeScript • .NET • Node.js • Python • Docker • Angular • SQL • MongoDB • AWS • " />
           <Skills />
           <Education />
           <Contact />

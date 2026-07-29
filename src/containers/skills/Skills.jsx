@@ -1,24 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import {
-  SiReact,
-  SiTypescript,
-  SiJavascript,
-  SiHtml5,
-  SiCss,
-  SiTailwindcss,
-  SiVite,
-  SiAngular,
-  SiDotnet,
-  SiNodedotjs,
-  SiLaravel,
-  SiPython,
-  SiMysql,
-  SiMongodb,
-  SiDocker,
-  SiGit,
+  SiReact, SiTypescript, SiJavascript, SiHtml5, SiCss,
+  SiTailwindcss, SiVite, SiAngular, SiDotnet, SiNodedotjs,
+  SiLaravel, SiPython, SiMysql, SiMongodb, SiDocker, SiGit,
 } from "react-icons/si";
 import { FiLayout, FiServer, FiDatabase, FiCloud, FiTool } from "react-icons/fi";
+import { useScrollReveal, fadeUp } from "../../hooks/useAnimations";
 import "./Skills.scss";
 
 const CATEGORY_ICONS = {
@@ -50,19 +38,22 @@ const TECH_ICONS = {
   "Git / GitHub": { icon: SiGit, color: "#F05032" },
 };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
-};
-
-function TechIcon({ name, size = 28 }) {
+function TechIcon({ name, size = 28, index = 0 }) {
   const tech = TECH_ICONS[name];
   if (!tech) return null;
   const Icon = tech.icon;
   return (
-    <div className="skills__tech-icon" title={name}>
+    <motion.div
+      className="skills__tech-icon"
+      title={name}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.04, ease: [0.22, 1, 0.36, 1] }}
+      whileHover={{ scale: 1.2, y: -6 }}
+    >
       <Icon size={size} color={tech.color} />
-    </div>
+    </motion.div>
   );
 }
 
@@ -70,16 +61,13 @@ export default function Skills() {
   const { t } = useTranslation();
   const categories = t("skills.categories", { returnObjects: true });
   const allSkills = categories.flatMap((cat) => cat.skills);
+  const reveal = useScrollReveal(0.1);
 
   return (
     <section className="skills section" id="skills">
+      <span className="section-bg-text" aria-hidden="true">{t("skills.title")}</span>
       <div className="skills__inner container">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-        >
+        <motion.div {...reveal}>
           <motion.div className="accent-bar" variants={fadeUp} />
           <motion.h2 className="section-heading" variants={fadeUp}>
             {t("skills.title")}
@@ -90,7 +78,7 @@ export default function Skills() {
 
           <motion.div className="skills__tech-grid" variants={fadeUp}>
             {allSkills.map((skill, i) => (
-              <TechIcon key={i} name={skill.name} />
+              <TechIcon key={i} name={skill.name} index={i} />
             ))}
           </motion.div>
 
@@ -98,9 +86,20 @@ export default function Skills() {
             {categories.map((cat, i) => {
               const CatIcon = CATEGORY_ICONS[cat.icon] || FiLayout;
               return (
-                <motion.div className="skills__category" key={i} variants={fadeUp}>
+                <motion.div
+                  className="skills__category"
+                  key={i}
+                  variants={fadeUp}
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                >
                   <div className="skills__category-header">
-                    <CatIcon size={18} className="skills__category-icon" />
+                    <motion.div
+                      whileHover={{ rotate: 15 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <CatIcon size={18} className="skills__category-icon" />
+                    </motion.div>
                     <h3 className="skills__category-name">{cat.name}</h3>
                   </div>
                   <div className="skills__list">
@@ -116,7 +115,7 @@ export default function Skills() {
                             initial={{ width: 0 }}
                             whileInView={{ width: `${skill.level}%` }}
                             viewport={{ once: true }}
-                            transition={{ duration: 1, delay: j * 0.05, ease: [0.22, 1, 0.36, 1] }}
+                            transition={{ duration: 1.2, delay: j * 0.06, ease: [0.22, 1, 0.36, 1] }}
                           />
                         </div>
                       </div>

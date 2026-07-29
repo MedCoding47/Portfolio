@@ -12,6 +12,7 @@ export default function About() {
 
   return (
     <section className="about section" id="about">
+      <span className="section-bg-text" aria-hidden="true">{t("about.title")}</span>
       <div className="about__inner container">
         <motion.div
           initial="hidden"

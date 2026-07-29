@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import ThemeContext from "../../contexts/ThemeContext";
+import { useScrollHide } from "../../hooks/useAnimations";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import "./Header.scss";
 
@@ -13,14 +15,13 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const hidden = useScrollHide(80);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-
       const sections = NAV_ITEMS.map((id) => document.getElementById(id));
       const scrollPos = window.scrollY + 120;
-
       for (let i = sections.length - 1; i >= 0; i--) {
         if (sections[i] && sections[i].offsetTop <= scrollPos) {
           setActiveSection(NAV_ITEMS[i]);
@@ -29,7 +30,6 @@ export default function Header() {
       }
       setActiveSection("");
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -48,7 +48,11 @@ export default function Header() {
   };
 
   return (
-    <header className={`header ${isScrolled ? "header--scrolled" : ""}`}>
+    <motion.header
+      className={`header ${isScrolled ? "header--scrolled" : ""}`}
+      animate={{ y: hidden ? -100 : 0 }}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="header__inner">
         <button className="header__logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <span className="header__logo-bracket">&lt;</span>
@@ -73,16 +77,14 @@ export default function Header() {
           <button className="header__lang-btn" onClick={toggleLang} title="Toggle language">
             {i18n.language === "en" ? "DE" : "EN"}
           </button>
-
           <button className="header__theme-btn" onClick={toggleTheme} title="Toggle theme">
             {isDark ? <FiSun size={18} /> : <FiMoon size={18} />}
           </button>
-
           <button className="header__mobile-toggle" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <FiX size={22} /> : <FiMenu size={22} />}
           </button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

@@ -1,26 +1,23 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { FiMapPin, FiCalendar } from "react-icons/fi";
+import { useScrollReveal, fadeUp } from "../../hooks/useAnimations";
 import "./Education.scss";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+const schoolEmojis = {
+  ofppt: "🎓",
+  lycee: "📚",
 };
 
 export default function Education() {
   const { t } = useTranslation();
   const schools = t("education.schools", { returnObjects: true });
+  const reveal = useScrollReveal(0.2);
 
   return (
     <section className="education section" id="education">
+      <span className="section-bg-text" aria-hidden="true">{t("education.title")}</span>
       <div className="education__inner container">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-        >
+        <motion.div {...reveal}>
           <motion.div className="accent-bar" variants={fadeUp} />
           <motion.h2 className="section-heading" variants={fadeUp}>
             {t("education.title")}
@@ -31,23 +28,29 @@ export default function Education() {
 
           <div className="education__grid">
             {schools.map((school, i) => (
-              <motion.div className="education__card" key={i} variants={fadeUp}>
-                <div className="education__card-icon">
-                  {school.logo === "ofppt" ? "🎓" : "📚"}
-                </div>
-                <div className="education__card-content">
+              <motion.div
+                className="education__card"
+                key={i}
+                initial={{ opacity: 0, y: 40, rotateX: -10 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: i * 0.2, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -6, scale: 1.01 }}
+              >
+                <motion.div
+                  className="education__icon"
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.2 + 0.2, type: "spring", stiffness: 200 }}
+                >
+                  {schoolEmojis[school.icon] || "📖"}
+                </motion.div>
+                <div className="education__info">
                   <h3 className="education__school">{school.school}</h3>
                   <p className="education__degree">{school.degree}</p>
-                  <div className="education__meta">
-                    <span className="education__meta-item">
-                      <FiMapPin size={14} />
-                      {school.location}
-                    </span>
-                    <span className="education__meta-item">
-                      <FiCalendar size={14} />
-                      {school.date}
-                    </span>
-                  </div>
+                  <p className="education__location">{school.location}</p>
+                  <span className="education__date">{school.date}</span>
                 </div>
               </motion.div>
             ))}

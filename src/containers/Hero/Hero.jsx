@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
+import { useMouseParallax } from "../../hooks/useAnimations";
 import photo from "../../assets/images/photo-optimized.webp";
 import "./Hero.scss";
 
@@ -8,7 +9,7 @@ const container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+    transition: { staggerChildren: 0.1, delayChildren: 0.15 },
   },
 };
 
@@ -19,9 +20,11 @@ const item = {
 
 export default function Hero() {
   const { t } = useTranslation();
+  const mouse = useMouseParallax(0.04);
+  const mouseStrong = useMouseParallax(0.08);
 
   return (
-    <section className="hero" id="hero">
+    <section className="hero" id="hero" onMouseMove={(e) => { mouse.handleMouse(e); mouseStrong.handleMouse(e); }}>
       <div className="hero__inner">
         <motion.div
           className="hero__content"
@@ -34,12 +37,18 @@ export default function Hero() {
             {t("hero.badge")}
           </motion.div>
 
-          <motion.p className="hero__greeting" variants={item}>
-            {t("hero.greeting")}
-          </motion.p>
-
           <motion.h1 className="hero__name" variants={item}>
-            {t("hero.name")}
+            {t("hero.name").split("").map((char, i) => (
+              <motion.span
+                key={i}
+                className="hero__name-char"
+                initial={{ opacity: 0, y: 30, rotateX: -40 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                transition={{ delay: 0.6 + i * 0.03, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
           </motion.h1>
 
           <motion.h2 className="hero__role" variants={item}>
@@ -92,13 +101,20 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          style={{ x: mouse.x, y: mouse.y }}
         >
           <div className="hero__image-frame">
             <img src={photo} alt="Ayat Mohamed" className="hero__photo" />
             <div className="hero__image-glow" />
           </div>
-          <div className="hero__image-decoration hero__image-decoration--1" />
-          <div className="hero__image-decoration hero__image-decoration--2" />
+          <motion.div
+            className="hero__image-decoration hero__image-decoration--1"
+            style={{ x: mouseStrong.x, y: mouseStrong.y }}
+          />
+          <motion.div
+            className="hero__image-decoration hero__image-decoration--2"
+            style={{ x: mouseStrong.x, y: mouse.y }}
+          />
         </motion.div>
       </div>
     </section>
