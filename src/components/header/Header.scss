@@ -73,12 +73,30 @@
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.header__nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.header__nav-link:hover::after,
+.header__nav-link--active::after {
+  transform: scaleX(1);
 }
 
 .header__nav-link:hover {
   color: var(--text-primary);
-  background: var(--bg-tertiary);
 }
 
 .header__nav-link--active {

@@ -50,8 +50,9 @@ export default function Header() {
   return (
     <motion.header
       className={`header ${isScrolled ? "header--scrolled" : ""}`}
-      animate={{ y: hidden ? -100 : 0 }}
-      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: hidden ? -100 : 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="header__inner">
         <button className="header__logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>

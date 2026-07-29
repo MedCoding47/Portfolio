@@ -98,15 +98,20 @@ export default function Hero() {
 
         <motion.div
           className="hero__image-wrapper"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           style={{ x: mouse.x, y: mouse.y }}
         >
-          <div className="hero__image-frame">
+          <motion.div
+            className="hero__image-frame"
+            initial={{ clipPath: "inset(0 0 100% 0)" }}
+            animate={{ clipPath: "inset(0 0 0 0)" }}
+            transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          >
             <img src={photo} alt="Ayat Mohamed" className="hero__photo" />
             <div className="hero__image-glow" />
-          </div>
+          </motion.div>
           <motion.div
             className="hero__image-decoration hero__image-decoration--1"
             style={{ x: mouseStrong.x, y: mouseStrong.y }}
