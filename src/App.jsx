@@ -5,6 +5,7 @@ import SplashScreen from "./components/SplashScreen/SplashScreen";
 import Header from "./components/Header/Header";
 import Hero from "./containers/Hero/Hero";
 import About from "./containers/About/About";
+import WorkGallery from "./containers/WorkGallery/WorkGallery";
 import Experience from "./containers/Experience/Experience";
 import Projects from "./containers/Projects/Projects";
 import Skills from "./containers/Skills/Skills";
@@ -44,6 +45,7 @@ function AppContent() {
         <main>
           <Hero />
           <About />
+          <WorkGallery />
           <Experience />
           <Projects />
           <Marquee text="React • TypeScript • .NET • Node.js • Python • Docker • Angular • SQL • MongoDB • AWS • " />

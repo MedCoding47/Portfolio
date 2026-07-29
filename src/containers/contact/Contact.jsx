@@ -8,7 +8,7 @@ const CONTACTS = [
   { icon: FiMail, label: "Email", href: "mailto:mohamed204ayat@gmail.com", primary: true },
   { icon: FiLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/ayat-mohamed-b73653315/" },
   { icon: FiGithub, label: "GitHub", href: "https://github.com/MedCoding47" },
-  { icon: FiMessageCircle, label: "WhatsApp", href: "https://wa.me/212600000000" },
+  { icon: FiMessageCircle, label: "WhatsApp", href: "https://wa.me/212607302999" },
 ];
 
 export default function Contact() {
@@ -34,12 +34,14 @@ export default function Contact() {
               animate={{ scale: [1, 1.3, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             />
-            {t("contact.available")}
+            {t("contact.availability")}
           </motion.div>
 
-          <motion.p className="contact__location" variants={fadeUp}>
-            {t("contact.location")}
-          </motion.p>
+          <motion.div className="contact__location" variants={fadeUp}>
+            <span>{t("contact.location")}</span>
+            <span className="contact__location-arrow">&rarr;</span>
+            <span className="contact__location-target">{t("contact.locationTarget")}</span>
+          </motion.div>
 
           <motion.div className="contact__links" variants={fadeUp}>
             {CONTACTS.map(({ icon: Icon, label, href, primary }, i) => (

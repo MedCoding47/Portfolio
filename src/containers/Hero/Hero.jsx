@@ -74,8 +74,8 @@ export default function Hero() {
               {t("hero.cta_contact")}
             </a>
             <a
-              href="/Portfolio/mohamed_ayat_lebenslauf.pdf"
-              download="mohamed_ayat_lebenslauf.pdf"
+              href="/Portfolio/Lebenslauf_Ayat_Mohamed.pdf"
+              download="Lebenslauf_Ayat_Mohamed.pdf"
               className="hero__cta hero__cta--outline"
             >
               <FiDownload size={16} />
