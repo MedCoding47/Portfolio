@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ThemeContext, { ThemeProvider } from "./contexts/ThemeContext";
 import { useContext } from "react";
+import SplashScreen from "./components/SplashScreen/SplashScreen";
 import Header from "./components/Header/Header";
 import Hero from "./containers/Hero/Hero";
 import About from "./containers/About/About";
@@ -16,6 +17,14 @@ import "./App.scss";
 function AppContent() {
   const { isDark } = useContext(ThemeContext);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [splashDone, setSplashDone] = useState(
+    () => sessionStorage.getItem("splashDone") === "true"
+  );
+
+  const handleSplashFinish = () => {
+    sessionStorage.setItem("splashDone", "true");
+    setSplashDone(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,20 +35,23 @@ function AppContent() {
   }, []);
 
   return (
-    <div className={`app ${isDark ? "app--dark" : ""}`}>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
-      <ScrollToTop visible={showScrollTop} />
-    </div>
+    <>
+      {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
+      <div className={`app ${isDark ? "app--dark" : ""}`}>
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
+        <ScrollToTop visible={showScrollTop} />
+      </div>
+    </>
   );
 }
 
