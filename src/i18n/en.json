@@ -181,12 +181,21 @@
   "certifications": {
     "title": "Certifications & Badges",
     "subtitle": "Verified credentials from courses and training programs.",
-    "ciscoTitle": "Managing a Business Venture",
-    "ciscoIssuer": "Cisco Networking Academy",
-    "ciscoDesc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management.",
     "viewBadge": "View on Credly",
     "viewPdf": "View Certificate",
-    "verifiedBadge": "Credly Verified"
+    "verifiedBadge": "Credly Verified",
+    "items": [
+      {
+        "title": "Managing a Business Venture",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management."
+      },
+      {
+        "title": "Data Science Essentials with Python",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Using Python and industry-standard libraries to explore, visualize and model data — applying analytical thinking and communicating insights through guided projects."
+      }
+    ]
   },
   "contact": {
     "title": "Get In Touch",
