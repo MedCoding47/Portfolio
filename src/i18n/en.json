@@ -183,22 +183,27 @@
     "subtitle": "Verified credentials from courses and training programs.",
     "viewBadge": "View on Credly",
     "viewPdf": "View Certificate",
+    "viewDetails": "View details",
     "verifiedBadge": "Credly Verified",
+    "issuedBy": "Issued by",
     "items": [
       {
         "title": "Managing a Business Venture",
         "issuer": "Cisco Networking Academy",
-        "desc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management."
+        "desc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management.",
+        "skills": ["Finance", "Accounting", "Team Building", "Business Structures", "Risk Management"]
       },
       {
         "title": "Data Science Essentials with Python",
         "issuer": "Cisco Networking Academy",
-        "desc": "Using Python and industry-standard libraries to explore, visualize and model data — applying analytical thinking and communicating insights through guided projects."
+        "desc": "Using Python and industry-standard libraries to explore, visualize and model data — applying analytical thinking and communicating insights through guided projects.",
+        "skills": ["Python", "Data Exploration", "Data Visualization", "Data Modeling", "Analytical Thinking"]
       },
       {
         "title": "Prompt Like an Engineer",
         "issuer": "Cisco Networking Academy",
-        "desc": "Applying an engineering mindset to prompts — designing, iterating, verifying and reusing them as a repeatable process; covers how chatbots and LLMs work, choosing between cloud and local AI tools while protecting sensitive data, and systematically evaluating AI output with a human in the lead."
+        "desc": "Applying an engineering mindset to prompts — designing, iterating, verifying and reusing them as a repeatable process; covers how chatbots and LLMs work, choosing between cloud and local AI tools while protecting sensitive data, and systematically evaluating AI output with a human in the lead.",
+        "skills": ["Prompt Design", "LLMs & Chatbots", "AI Tool Selection", "Data Privacy", "Output Evaluation"]
       }
     ]
   },

@@ -183,22 +183,27 @@
     "subtitle": "Verifizierte Abschlüsse aus Kursen und Weiterbildungen.",
     "viewBadge": "Auf Credly ansehen",
     "viewPdf": "Zertifikat ansehen",
+    "viewDetails": "Details ansehen",
     "verifiedBadge": "Credly-verifiziert",
+    "issuedBy": "Ausgestellt von",
     "items": [
       {
         "title": "Managing a Business Venture",
         "issuer": "Cisco Networking Academy",
-        "desc": "Student-Level-Zertifikat über strategisches Geschäftsmanagement und operative Planung — Finanzen, Buchhaltung, Teamaufbau, Unternehmensstrukturen und Risikomanagement."
+        "desc": "Student-Level-Zertifikat über strategisches Geschäftsmanagement und operative Planung — Finanzen, Buchhaltung, Teamaufbau, Unternehmensstrukturen und Risikomanagement.",
+        "skills": ["Finanzen", "Buchhaltung", "Teamaufbau", "Unternehmensstrukturen", "Risikomanagement"]
       },
       {
         "title": "Data Science Essentials with Python",
         "issuer": "Cisco Networking Academy",
-        "desc": "Einsatz von Python und branchenüblichen Bibliotheken, um Daten zu untersuchen, zu visualisieren und zu modellieren — mit analytischem Denken und Kommunikation von Erkenntnissen in geführten Projekten."
+        "desc": "Einsatz von Python und branchenüblichen Bibliotheken, um Daten zu untersuchen, zu visualisieren und zu modellieren — mit analytischem Denken und Kommunikation von Erkenntnissen in geführten Projekten.",
+        "skills": ["Python", "Datenanalyse", "Datenvisualisierung", "Datenmodellierung", "Analytisches Denken"]
       },
       {
         "title": "Prompt Like an Engineer",
         "issuer": "Cisco Networking Academy",
-        "desc": "Engineering-Mindset für Prompts — Entwerfen, Iterieren, Überprüfen und Wiederverwenden als wiederholbarer Prozess; Funktionsweise von Chatbots und LLMs, Auswahl zwischen Cloud- und lokalen KI-Tools unter Schutz sensibler Daten sowie systematische Bewertung von KI-Ergebnissen mit dem Menschen in der Verantwortung."
+        "desc": "Engineering-Mindset für Prompts — Entwerfen, Iterieren, Überprüfen und Wiederverwenden als wiederholbarer Prozess; Funktionsweise von Chatbots und LLMs, Auswahl zwischen Cloud- und lokalen KI-Tools unter Schutz sensibler Daten sowie systematische Bewertung von KI-Ergebnissen mit dem Menschen in der Verantwortung.",
+        "skills": ["Prompt-Design", "LLMs & Chatbots", "KI-Tool-Auswahl", "Datenschutz", "KI-Auswertung"]
       }
     ]
   },
