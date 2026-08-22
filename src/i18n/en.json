@@ -5,6 +5,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "education": "Education",
+    "certifications": "Certificates",
     "contact": "Contact"
   },
   "hero": {
@@ -176,6 +177,16 @@
         "logo": "tariq"
       }
     ]
+  },
+  "certifications": {
+    "title": "Certifications & Badges",
+    "subtitle": "Verified credentials from courses and training programs.",
+    "ciscoTitle": "Managing a Business Venture",
+    "ciscoIssuer": "Cisco Networking Academy",
+    "ciscoDesc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management.",
+    "viewBadge": "View on Credly",
+    "viewPdf": "View Certificate",
+    "verifiedBadge": "Credly Verified"
   },
   "contact": {
     "title": "Get In Touch",

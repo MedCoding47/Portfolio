@@ -7,7 +7,7 @@ import { useScrollHide } from "../../hooks/useAnimations";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 import "./Header.scss";
 
-const NAV_ITEMS = ["about", "experience", "projects", "skills", "education", "contact"];
+const NAV_ITEMS = ["about", "experience", "projects", "skills", "education", "certifications", "contact"];
 
 export default function Header() {
   const { t, i18n } = useTranslation();

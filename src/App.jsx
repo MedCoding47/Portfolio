@@ -10,6 +10,7 @@ import Experience from "./containers/Experience/Experience";
 import Projects from "./containers/Projects/Projects";
 import Skills from "./containers/Skills/Skills";
 import Education from "./containers/Education/Education";
+import Certifications from "./containers/Certifications/Certifications";
 import Contact from "./containers/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -51,6 +52,7 @@ function AppContent() {
           <Marquee text="React • TypeScript • .NET • Node.js • Python • Docker • Angular • SQL • MongoDB • AWS • " />
           <Skills />
           <Education />
+          <Certifications />
           <Contact />
         </main>
         <Footer />

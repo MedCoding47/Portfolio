@@ -5,6 +5,7 @@
     "projects": "Projekte",
     "skills": "Fähigkeiten",
     "education": "Bildung",
+    "certifications": "Zertifikate",
     "contact": "Kontakt"
   },
   "hero": {
@@ -176,6 +177,16 @@
         "logo": "tariq"
       }
     ]
+  },
+  "certifications": {
+    "title": "Zertifikate & Badges",
+    "subtitle": "Verifizierte Abschlüsse aus Kursen und Weiterbildungen.",
+    "ciscoTitle": "Managing a Business Venture",
+    "ciscoIssuer": "Cisco Networking Academy",
+    "ciscoDesc": "Student-Level-Zertifikat über strategisches Geschäftsmanagement und operative Planung — Finanzen, Buchhaltung, Teamaufbau, Unternehmensstrukturen und Risikomanagement.",
+    "viewBadge": "Auf Credly ansehen",
+    "viewPdf": "Zertifikat ansehen",
+    "verifiedBadge": "Credly-verifiziert"
   },
   "contact": {
     "title": "Schreib Mich An",
