@@ -194,6 +194,11 @@
         "title": "Data Science Essentials with Python",
         "issuer": "Cisco Networking Academy",
         "desc": "Using Python and industry-standard libraries to explore, visualize and model data — applying analytical thinking and communicating insights through guided projects."
+      },
+      {
+        "title": "Prompt Like an Engineer",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Applying an engineering mindset to prompts — designing, iterating, verifying and reusing them as a repeatable process; covers how chatbots and LLMs work, choosing between cloud and local AI tools while protecting sensitive data, and systematically evaluating AI output with a human in the lead."
       }
     ]
   },

@@ -17,6 +17,10 @@ const CERTS = [
     badgeId: "f072f16b-6c1e-457c-9795-9a1bfe1c07f9",
     pdf: "/Portfolio/Data-Science-Essentials-with-Python.pdf",
   },
+  {
+    badgeId: "277b3b9a-29f0-4f13-b758-a996a63308dd",
+    pdf: "/Portfolio/Prompt-Like-an-Engineer.pdf",
+  },
 ];
 
 export default function Certifications() {
