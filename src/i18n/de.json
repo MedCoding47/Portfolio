@@ -204,6 +204,12 @@
         "issuer": "Cisco Networking Academy",
         "desc": "Engineering-Mindset für Prompts — Entwerfen, Iterieren, Überprüfen und Wiederverwenden als wiederholbarer Prozess; Funktionsweise von Chatbots und LLMs, Auswahl zwischen Cloud- und lokalen KI-Tools unter Schutz sensibler Daten sowie systematische Bewertung von KI-Ergebnissen mit dem Menschen in der Verantwortung.",
         "skills": ["Prompt-Design", "LLMs & Chatbots", "KI-Tool-Auswahl", "Datenschutz", "KI-Auswertung"]
+      },
+      {
+        "title": "Introduction to Data Science",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Breites Verständnis der Grundkonzepte von Datenanalyse, Data Engineering, Data Science und KI/ML-Berufsfeldern — mit Einblicken in Karrierechancen in verschiedenen Datenrollen.",
+        "skills": ["Datenanalyse", "Data Engineering", "Data Science", "KI / ML", "Karriereperspektiven"]
       }
     ]
   },

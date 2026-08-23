@@ -28,6 +28,12 @@ const CERTS = [
     image:
       "https://images.credly.com/size/340x340/images/cafee69a-0443-4054-9916-e6644dd75961/linkedin_thumb_blob",
   },
+  {
+    badgeId: "22ff12a8-cf0e-40ad-a5fb-107cdc781edd",
+    pdf: "/Portfolio/Introduction-to-Data-Science.pdf",
+    image:
+      "https://images.credly.com/size/340x340/images/b38a42e0-dc58-4ce2-b6c0-28d978e8aaad/linkedin_thumb_image.png",
+  },
 ];
 
 export default function Certifications() {

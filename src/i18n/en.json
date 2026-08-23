@@ -204,6 +204,12 @@
         "issuer": "Cisco Networking Academy",
         "desc": "Applying an engineering mindset to prompts — designing, iterating, verifying and reusing them as a repeatable process; covers how chatbots and LLMs work, choosing between cloud and local AI tools while protecting sensitive data, and systematically evaluating AI output with a human in the lead.",
         "skills": ["Prompt Design", "LLMs & Chatbots", "AI Tool Selection", "Data Privacy", "Output Evaluation"]
+      },
+      {
+        "title": "Introduction to Data Science",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Broad understanding of the basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML job functions — with insight into career opportunities across various data roles.",
+        "skills": ["Data Analytics", "Data Engineering", "Data Science", "AI / ML", "Career Paths"]
       }
     ]
   },
