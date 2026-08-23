@@ -210,6 +210,12 @@
         "issuer": "Cisco Networking Academy",
         "desc": "Breites Verständnis der Grundkonzepte von Datenanalyse, Data Engineering, Data Science und KI/ML-Berufsfeldern — mit Einblicken in Karrierechancen in verschiedenen Datenrollen.",
         "skills": ["Datenanalyse", "Data Engineering", "Data Science", "KI / ML", "Karriereperspektiven"]
+      },
+      {
+        "title": "English for IT 1",
+        "issuer": "Cisco Networking Academy × OpenEDG",
+        "desc": "Student-Level-Zertifikat über komplexe englische Grammatik im IT-Kontext — Konzepte der Informationssicherheit und Berufsrollen, Formulierungen für den Kundensupport sowie Vokabular zu User Experience, Netzwerk- und Softwareentwicklung.",
+        "skills": ["Technisches Englisch", "IT-Sicherheit", "Kundensupport", "UX-Fachbegriffe", "Grammatik B2"]
       }
     ]
   },

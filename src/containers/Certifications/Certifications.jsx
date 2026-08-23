@@ -34,6 +34,12 @@ const CERTS = [
     image:
       "https://images.credly.com/size/340x340/images/b38a42e0-dc58-4ce2-b6c0-28d978e8aaad/linkedin_thumb_image.png",
   },
+  {
+    badgeId: "57017b4e-88ed-4d96-abc3-562f09af525b",
+    pdf: "/Portfolio/English-for-IT-1.pdf",
+    image:
+      "https://images.credly.com/size/340x340/images/77b1ea15-6287-4d97-8ecd-c5afa2d137ea/linkedin_thumb_image.png",
+  },
 ];
 
 export default function Certifications() {

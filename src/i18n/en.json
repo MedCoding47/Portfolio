@@ -210,6 +210,12 @@
         "issuer": "Cisco Networking Academy",
         "desc": "Broad understanding of the basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML job functions — with insight into career opportunities across various data roles.",
         "skills": ["Data Analytics", "Data Engineering", "Data Science", "AI / ML", "Career Paths"]
+      },
+      {
+        "title": "English for IT 1",
+        "issuer": "Cisco Networking Academy × OpenEDG",
+        "desc": "Student-level credential covering complex English grammar in IT contexts — information security concepts and job roles, customer support phrases, and vocabulary for user experience, network and software engineering.",
+        "skills": ["Technical English", "IT Security Vocabulary", "Customer Support", "UX Terminology", "Grammar B2"]
       }
     ]
   },
