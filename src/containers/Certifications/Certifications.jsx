@@ -40,6 +40,12 @@ const CERTS = [
     image:
       "https://images.credly.com/size/340x340/images/77b1ea15-6287-4d97-8ecd-c5afa2d137ea/linkedin_thumb_image.png",
   },
+  {
+    badgeId: "70882cf5-74de-4f3d-9ccc-7fe88199ddc7",
+    pdf: "/Portfolio/Ethical-Hacker.pdf",
+    image:
+      "https://images.credly.com/size/340x340/images/242902b5-f527-42ad-865e-977c9e1b5b58/linkedin_thumb_image.png",
+  },
 ];
 
 export default function Certifications() {

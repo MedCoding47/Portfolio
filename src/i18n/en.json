@@ -216,6 +216,12 @@
         "issuer": "Cisco Networking Academy × OpenEDG",
         "desc": "Student-level credential covering complex English grammar in IT contexts — information security concepts and job roles, customer support phrases, and vocabulary for user experience, network and software engineering.",
         "skills": ["Technical English", "IT Security Vocabulary", "Customer Support", "UX Terminology", "Grammar B2"]
+      },
+      {
+        "title": "Ethical Hacker",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Student-level credential covering legal and compliance requirements, scoping and executing vulnerability assessments, and recommending mitigation strategies — with up to 34 hands-on activities using Kali Linux, WebSploit and other tools.",
+        "skills": ["Ethical Hacking", "Vulnerability Assessment", "Kali Linux", "Penetration Testing", "Risk Mitigation"]
       }
     ]
   },

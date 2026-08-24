@@ -216,6 +216,12 @@
         "issuer": "Cisco Networking Academy × OpenEDG",
         "desc": "Student-Level-Zertifikat über komplexe englische Grammatik im IT-Kontext — Konzepte der Informationssicherheit und Berufsrollen, Formulierungen für den Kundensupport sowie Vokabular zu User Experience, Netzwerk- und Softwareentwicklung.",
         "skills": ["Technisches Englisch", "IT-Sicherheit", "Kundensupport", "UX-Fachbegriffe", "Grammatik B2"]
+      },
+      {
+        "title": "Ethical Hacker",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Student-Level-Zertifikat über rechtliche und Compliance-Anforderungen, Planung und Durchführung von Schwachstellenanalysen und Empfehlung von Gegenmaßnahmen — mit bis zu 34 Praxisaktivitäten unter Verwendung von Kali Linux, WebSploit und anderen Tools.",
+        "skills": ["Ethical Hacking", "Schwachstellenanalyse", "Kali Linux", "Penetration Testing", "Risikominimierung"]
       }
     ]
   },
