@@ -11,28 +11,10 @@ const fadeUp = {
 
 const CERTS = [
   {
-    badgeId: "dab79ef1-aacb-4439-95ba-2238bdbb9168",
-    pdf: "/Portfolio/Managing-a-Business-Venture.pdf",
+    badgeId: "70882cf5-74de-4f3d-9ccc-7fe88199ddc7",
+    pdf: "/Portfolio/Ethical-Hacker.pdf",
     image:
-      "https://images.credly.com/size/340x340/images/397c4c71-2f0b-4476-8f61-6a6c726d6cd4/linkedin_thumb_image.png",
-  },
-  {
-    badgeId: "f072f16b-6c1e-457c-9795-9a1bfe1c07f9",
-    pdf: "/Portfolio/Data-Science-Essentials-with-Python.pdf",
-    image:
-      "https://images.credly.com/size/340x340/images/62db59ef-19f9-4652-a00c-7582baee8177/linkedin_thumb_blob",
-  },
-  {
-    badgeId: "277b3b9a-29f0-4f13-b758-a996a63308dd",
-    pdf: "/Portfolio/Prompt-Like-an-Engineer.pdf",
-    image:
-      "https://images.credly.com/size/340x340/images/cafee69a-0443-4054-9916-e6644dd75961/linkedin_thumb_blob",
-  },
-  {
-    badgeId: "22ff12a8-cf0e-40ad-a5fb-107cdc781edd",
-    pdf: "/Portfolio/Introduction-to-Data-Science.pdf",
-    image:
-      "https://images.credly.com/size/340x340/images/b38a42e0-dc58-4ce2-b6c0-28d978e8aaad/linkedin_thumb_image.png",
+      "https://images.credly.com/size/340x340/images/242902b5-f527-42ad-865e-977c9e1b5b58/linkedin_thumb_image.png",
   },
   {
     badgeId: "57017b4e-88ed-4d96-abc3-562f09af525b",
@@ -41,10 +23,28 @@ const CERTS = [
       "https://images.credly.com/size/340x340/images/77b1ea15-6287-4d97-8ecd-c5afa2d137ea/linkedin_thumb_image.png",
   },
   {
-    badgeId: "70882cf5-74de-4f3d-9ccc-7fe88199ddc7",
-    pdf: "/Portfolio/Ethical-Hacker.pdf",
+    badgeId: "277b3b9a-29f0-4f13-b758-a996a63308dd",
+    pdf: "/Portfolio/Prompt-Like-an-Engineer.pdf",
     image:
-      "https://images.credly.com/size/340x340/images/242902b5-f527-42ad-865e-977c9e1b5b58/linkedin_thumb_image.png",
+      "https://images.credly.com/size/340x340/images/cafee69a-0443-4054-9916-e6644dd75961/linkedin_thumb_blob",
+  },
+  {
+    badgeId: "f072f16b-6c1e-457c-9795-9a1bfe1c07f9",
+    pdf: "/Portfolio/Data-Science-Essentials-with-Python.pdf",
+    image:
+      "https://images.credly.com/size/340x340/images/62db59ef-19f9-4652-a00c-7582baee8177/linkedin_thumb_blob",
+  },
+  {
+    badgeId: "dab79ef1-aacb-4439-95ba-2238bdbb9168",
+    pdf: "/Portfolio/Managing-a-Business-Venture.pdf",
+    image:
+      "https://images.credly.com/size/340x340/images/397c4c71-2f0b-4476-8f61-6a6c726d6cd4/linkedin_thumb_image.png",
+  },
+  {
+    badgeId: "22ff12a8-cf0e-40ad-a5fb-107cdc781edd",
+    pdf: "/Portfolio/Introduction-to-Data-Science.pdf",
+    image:
+      "https://images.credly.com/size/340x340/images/b38a42e0-dc58-4ce2-b6c0-28d978e8aaad/linkedin_thumb_image.png",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function Certifications() {
           </motion.p>
 
           <div className="certifications__grid">
-            {items.map((item, i) => {
+            {items.slice(0, 4).map((item, i) => {
               const cert = CERTS[i];
               if (!cert) return null;
               return (
@@ -144,6 +144,19 @@ export default function Certifications() {
               );
             })}
           </div>
+
+          {items.length > 4 && (
+            <div className="certifications__compact">
+              <h3 className="certifications__compact-title">{t("certifications.moreTitle")}</h3>
+              <ul className="certifications__compact-list">
+                {items.slice(4).map((item) => (
+                  <li key={item.title} className="certifications__compact-item">
+                    {item.title} <span className="certifications__compact-issuer">— {item.issuer}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </motion.div>
       </div>
 

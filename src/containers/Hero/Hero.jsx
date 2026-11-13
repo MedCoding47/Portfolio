@@ -61,6 +61,10 @@ export default function Hero() {
             dangerouslySetInnerHTML={{ __html: t("hero.subtitle") }}
           />
 
+          <motion.p className="hero__availability" variants={item}>
+            Available for website maintenance retainers
+          </motion.p>
+
           <motion.div className="hero__german-tag" variants={item}>
             <span className="hero__flag">🇩🇪</span>
             {t("hero.badgeSub")}

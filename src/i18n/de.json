@@ -79,31 +79,27 @@
     "items": [
       {
         "name": "Nino — Tieradoptions-SaaS",
-        "description": "Eine Multi-Tenant-SaaS-Plattform, die Tierheime mit Adoptierenden verbindet. Features: rollenbasierte Dashboards, Tierbrowser mit Filtern, Tierarzt-Buchung, Spenden-System und Echtzeit-Analysen.",
+        "description": "Problem: Tierheime haben Schwierigkeiten, Adoptierende, Tierarzt-Termine und Spenden über verschiedene Tools hinweg zu verwalten. Solution: Eine Multi-Tenant-SaaS-Plattform mit rollenbasierten Dashboards, Tierbrowser mit Filtern, Tierarzt-Buchung, Spenden-System und Echtzeit-Analysen, entwickelt mit ASP.NET 8, React, SQL Server, Stripe und Vite. Result: Tierheime verwalten Adoptionen von Anfang bis Ende auf einer Plattform mit automatisierter Buchungs- und Spendenverfolgung.",
         "tags": ["ASP.NET 8", "React", "SQL Server", "Stripe", "Vite"],
-        "github": "https://github.com/MedCoding47/saas_stay_soon",
-        "featured": true
+        "github": "https://github.com/MedCoding47/saas_stay_soon"
       },
       {
         "name": "Enterprise-Anwendungen @ INVOLYS",
-        "description": "Webanwendungen für bedeutende marokkanische Institutionen (CNSS, AMDIE, ONHYM, AMMC). Enterprise-Software mit komplexem Datenmanagement und Berichterstattung.",
+        "description": "Problem: Marokkanische Institutionen (CNSS, AMDIE, ONHYM, AMMC) benötigten skalierbare Enterprise-Software für komplexes Datenmanagement und Reporting. Solution: Full-Stack-Enterprise-Webanwendungen mit .NET-Backend, React-Frontend und SQL Server/Oracle-Datenbanken. Result: Institutionen führen Reporting und Datenvorgänge auf einer einheitlichen, wartungsarmen Plattform aus.",
         "tags": [".NET", "React", "SQL Server", "Oracle"],
-        "github": null,
-        "featured": false
+        "github": null
       },
       {
         "name": "Animal Planet Adoptionsplattform",
-        "description": "Vollständige Tieradoptions-Website mit Anzeigenverwaltung, benutzerfreundlichem Browsing, E-Commerce-Shop und mehrstufiger Tierunterstützung.",
+        "description": "Problem: Tierinteressenten hatten keinen zentralen Ort, um Tiere über mehrere Kategorien hinweg zu durchsuchen, zu finden und zu adoptieren. Solution: Eine vollständige Tieradoptions-Website mit Anzeigenverwaltung, benutzerfreundlichem Browsing, E-Commerce-Shop und mehrstufiger Tierunterstützung, entwickelt mit React, Laravel, MySQL und PHP. Result: Nutzer können Hunde, Katzen, Vögel und Nagetiere über eine shopintegrierte Plattform durchsuchen und adoptieren.",
         "tags": ["React", "Laravel", "MySQL", "PHP"],
-        "github": "https://github.com/MedCoding47/pet",
-        "featured": false
+        "github": "https://github.com/MedCoding47/pet"
       },
       {
         "name": "Elektrofahrzeug-Vermietung",
-        "description": "Webplattform zur Vermietung von Elektrofahrzeugen inklusive Autos und Fahrrädern. mit Buchungssystem, Fahrzeugverwaltung und responsive Design.",
+        "description": "Problem: Die Vermietung von Elektroautos und Fahrrädern verfügte über keine einheitliche Buchungs- und Fahrzeugverwaltungsplattform. Solution: Eine responsive Webplattform mit Buchungssystem und Fahrzeugverwaltung, entwickelt mit Vite, Laravel und MySQL. Result: Kunden können Elektrofahrzeuge online durchsuchen und reservieren, mit einem mobilfreundlichen Erlebnis.",
         "tags": ["Vite", "Laravel", "MySQL"],
-        "github": "https://github.com/souyousy/location_voiture",
-        "featured": false
+        "github": "https://github.com/souyousy/location_voiture"
       }
     ]
   },
@@ -153,7 +149,8 @@
           { "name": "Docker", "level": 70 },
           { "name": "AWS", "level": 60 },
           { "name": "Git / GitHub", "level": 90 },
-          { "name": "Agile / Scrum", "level": 80 }
+          { "name": "Agile / Scrum", "level": 80 },
+          { "name": "Deutsch (B1)", "level": 80 }
         ]
       }
     ]
@@ -184,32 +181,15 @@
     "viewBadge": "Auf Credly ansehen",
     "viewPdf": "Zertifikat ansehen",
     "viewDetails": "Details ansehen",
+    "moreTitle": "Weitere Zertifikate",
     "verifiedBadge": "Credly-verifiziert",
     "issuedBy": "Ausgestellt von",
     "items": [
       {
-        "title": "Managing a Business Venture",
+        "title": "Ethical Hacker",
         "issuer": "Cisco Networking Academy",
-        "desc": "Student-Level-Zertifikat über strategisches Geschäftsmanagement und operative Planung — Finanzen, Buchhaltung, Teamaufbau, Unternehmensstrukturen und Risikomanagement.",
-        "skills": ["Finanzen", "Buchhaltung", "Teamaufbau", "Unternehmensstrukturen", "Risikomanagement"]
-      },
-      {
-        "title": "Data Science Essentials with Python",
-        "issuer": "Cisco Networking Academy",
-        "desc": "Einsatz von Python und branchenüblichen Bibliotheken, um Daten zu untersuchen, zu visualisieren und zu modellieren — mit analytischem Denken und Kommunikation von Erkenntnissen in geführten Projekten.",
-        "skills": ["Python", "Datenanalyse", "Datenvisualisierung", "Datenmodellierung", "Analytisches Denken"]
-      },
-      {
-        "title": "Prompt Like an Engineer",
-        "issuer": "Cisco Networking Academy",
-        "desc": "Engineering-Mindset für Prompts — Entwerfen, Iterieren, Überprüfen und Wiederverwenden als wiederholbarer Prozess; Funktionsweise von Chatbots und LLMs, Auswahl zwischen Cloud- und lokalen KI-Tools unter Schutz sensibler Daten sowie systematische Bewertung von KI-Ergebnissen mit dem Menschen in der Verantwortung.",
-        "skills": ["Prompt-Design", "LLMs & Chatbots", "KI-Tool-Auswahl", "Datenschutz", "KI-Auswertung"]
-      },
-      {
-        "title": "Introduction to Data Science",
-        "issuer": "Cisco Networking Academy",
-        "desc": "Breites Verständnis der Grundkonzepte von Datenanalyse, Data Engineering, Data Science und KI/ML-Berufsfeldern — mit Einblicken in Karrierechancen in verschiedenen Datenrollen.",
-        "skills": ["Datenanalyse", "Data Engineering", "Data Science", "KI / ML", "Karriereperspektiven"]
+        "desc": "Student-Level-Zertifikat über rechtliche und Compliance-Anforderungen, Planung und Durchführung von Schwachstellenanalysen und Empfehlung von Gegenmaßnahmen — mit bis zu 34 Praxisaktivitäten unter Verwendung von Kali Linux, WebSploit und anderen Tools.",
+        "skills": ["Ethical Hacking", "Schwachstellenanalyse", "Kali Linux", "Penetration Testing", "Risikominimierung"]
       },
       {
         "title": "English for IT 1",
@@ -218,10 +198,28 @@
         "skills": ["Technisches Englisch", "IT-Sicherheit", "Kundensupport", "UX-Fachbegriffe", "Grammatik B2"]
       },
       {
-        "title": "Ethical Hacker",
+        "title": "Prompt Like an Engineer",
         "issuer": "Cisco Networking Academy",
-        "desc": "Student-Level-Zertifikat über rechtliche und Compliance-Anforderungen, Planung und Durchführung von Schwachstellenanalysen und Empfehlung von Gegenmaßnahmen — mit bis zu 34 Praxisaktivitäten unter Verwendung von Kali Linux, WebSploit und anderen Tools.",
-        "skills": ["Ethical Hacking", "Schwachstellenanalyse", "Kali Linux", "Penetration Testing", "Risikominimierung"]
+        "desc": "Engineering-Mindset für Prompts — Entwerfen, Iterieren, Überprüfen und Wiederverwenden als wiederholbarer Prozess; Funktionsweise von Chatbots und LLMs, Auswahl zwischen Cloud- und lokalen KI-Tools unter Schutz sensibler Daten sowie systematische Bewertung von KI-Ergebnissen mit dem Menschen in der Verantwortung.",
+        "skills": ["Prompt-Design", "LLMs & Chatbots", "KI-Tool-Auswahl", "Datenschutz", "KI-Auswertung"]
+      },
+      {
+        "title": "Data Science Essentials with Python",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Einsatz von Python und branchenüblichen Bibliotheken, um Daten zu untersuchen, zu visualisieren und zu modellieren — mit analytischem Denken und Kommunikation von Erkenntnissen in geführten Projekten.",
+        "skills": ["Python", "Datenanalyse", "Datenvisualisierung", "Datenmodellierung", "Analytisches Denken"]
+      },
+      {
+        "title": "Managing a Business Venture",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Student-Level-Zertifikat über strategisches Geschäftsmanagement und operative Planung — Finanzen, Buchhaltung, Teamaufbau, Unternehmensstrukturen und Risikomanagement.",
+        "skills": ["Finanzen", "Buchhaltung", "Teamaufbau", "Unternehmensstrukturen", "Risikomanagement"]
+      },
+      {
+        "title": "Introduction to Data Science",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Breites Verständnis der Grundkonzepte von Datenanalyse, Data Engineering, Data Science und KI/ML-Berufsfeldern — mit Einblicken in Karrierechancen in verschiedenen Datenrollen.",
+        "skills": ["Datenanalyse", "Data Engineering", "Data Science", "KI / ML", "Karriereperspektiven"]
       }
     ]
   },
@@ -238,7 +236,8 @@
   },
   "footer": {
     "built": "Gestaltet & Entwickelt von Ayat Mohamed",
-    "tagline": "Erstellt in Marokko | Gebaut für Deutschland"
+    "tagline": "Erstellt in Marokko | Gebaut für Deutschland",
+    "availability": "Verfügbar für Arbeit · Casablanca, Marokko · Aktualisiert November 2026"
   },
   "language": {
     "en": "EN",

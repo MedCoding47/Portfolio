@@ -9,13 +9,6 @@ import { FiLayout, FiServer, FiDatabase, FiCloud, FiTool } from "react-icons/fi"
 import { useScrollReveal, fadeUp } from "../../hooks/useAnimations";
 import "./Skills.scss";
 
-const CATEGORY_ICONS = {
-  frontend: FiLayout,
-  backend: FiServer,
-  database: FiDatabase,
-  devops: FiCloud,
-};
-
 const TECH_ICONS = {
   "React": { icon: SiReact, color: "#61DAFB" },
   "JavaScript": { icon: SiJavascript, color: "#F7DF1E" },
@@ -82,48 +75,12 @@ export default function Skills() {
             ))}
           </motion.div>
 
-          <div className="skills__grid">
-            {categories.map((cat, i) => {
-              const CatIcon = CATEGORY_ICONS[cat.icon] || FiLayout;
-              return (
-                <motion.div
-                  className="skills__category"
-                  key={i}
-                  variants={fadeUp}
-                  whileHover={{ y: -4 }}
-                  transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  <div className="skills__category-header">
-                    <motion.div
-                      whileHover={{ rotate: 15 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <CatIcon size={18} className="skills__category-icon" />
-                    </motion.div>
-                    <h3 className="skills__category-name">{cat.name}</h3>
-                  </div>
-                  <div className="skills__list">
-                    {cat.skills.map((skill, j) => (
-                      <div className="skills__item" key={j}>
-                        <div className="skills__item-header">
-                          <span className="skills__item-name">{skill.name}</span>
-                          <span className="skills__item-level">{skill.level}%</span>
-                        </div>
-                        <div className="skills__bar">
-                          <motion.div
-                            className="skills__bar-fill"
-                            initial={{ width: 0 }}
-                            whileInView={{ width: `${skill.level}%` }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 1.2, delay: j * 0.06, ease: [0.22, 1, 0.36, 1] }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              );
-            })}
+          <div className="skills__tags">
+            {allSkills.map((skill, i) => (
+              <span key={i} className="skills__tag">
+                {skill.name}
+              </span>
+            ))}
           </div>
         </motion.div>
       </div>

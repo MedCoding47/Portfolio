@@ -50,6 +50,7 @@ export default function Footer() {
           </motion.div>
         </div>
         <motion.div className="footer__bottom" variants={item}>
+          <p>{t("footer.availability")}</p>
           <p>{t("footer.built")}</p>
         </motion.div>
       </div>

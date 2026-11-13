@@ -79,31 +79,27 @@
     "items": [
       {
         "name": "Nino — Pet Adoption SaaS",
-        "description": "A multi-tenant SaaS platform connecting animal shelters with adopters. Features role-based dashboards, pet browser with filters, vet booking, donation system, and real-time analytics.",
+        "description": "Problem: Animal shelters struggle to manage adopters, vet bookings, and donations across disconnected tools. Solution: Built a multi-tenant SaaS with role-based dashboards, a filtered pet browser, vet booking, donation system, and real-time analytics using ASP.NET 8, React, SQL Server, Stripe, and Vite. Result: Shelters can manage adoptions end-to-end in one platform, with automated booking and donation tracking.",
         "tags": ["ASP.NET 8", "React", "SQL Server", "Stripe", "Vite"],
-        "github": "https://github.com/MedCoding47/saas_stay_soon",
-        "featured": true
+        "github": "https://github.com/MedCoding47/saas_stay_soon"
       },
       {
         "name": "Enterprise Applications @ INVOLYS",
-        "description": "Web applications for major Moroccan institutions (CNSS, AMDIE, ONHYM, AMMC). Enterprise-grade software with complex data management and reporting.",
+        "description": "Problem: Moroccan institutions (CNSS, AMDIE, ONHYM, AMMC) needed scalable enterprise software for complex data management and reporting. Solution: Delivered full-stack enterprise web apps with .NET backend, React frontend, and SQL Server/Oracle databases. Result: Institutions now run reporting and data operations on a unified, maintainable platform.",
         "tags": [".NET", "React", "SQL Server", "Oracle"],
-        "github": null,
-        "featured": false
+        "github": null
       },
       {
         "name": "Animal Planet Adoption Platform",
-        "description": "Full-featured pet adoption website with listings management, user-friendly browsing, e-commerce shop section, and multi-category animal support.",
+        "description": "Problem: Pet adopters had no central place to browse, search, and adopt animals across multiple categories. Solution: Built a full-featured pet adoption website with listings management, intuitive browsing, an e-commerce shop section, and multi-category animal support using React, Laravel, MySQL, and PHP. Result: Users can browse and adopt pets across dogs, cats, birds, and rodents through a single shop-integrated platform.",
         "tags": ["React", "Laravel", "MySQL", "PHP"],
-        "github": "https://github.com/MedCoding47/pet",
-        "featured": false
+        "github": "https://github.com/MedCoding47/pet"
       },
       {
         "name": "Electric Vehicle Rental",
-        "description": "Web platform for renting electric vehicles including cars and bikes. Features booking system, vehicle management, and responsive design.",
+        "description": "Problem: Renting electric cars and bikes lacked a unified booking and vehicle management platform. Solution: Developed a responsive web platform with a booking system and vehicle management using Vite, Laravel, and MySQL. Result: Customers can browse and reserve electric vehicles online with a mobile-friendly experience.",
         "tags": ["Vite", "Laravel", "MySQL"],
-        "github": "https://github.com/souyousy/location_voiture",
-        "featured": false
+        "github": "https://github.com/souyousy/location_voiture"
       }
     ]
   },
@@ -153,7 +149,8 @@
           { "name": "Docker", "level": 70 },
           { "name": "AWS", "level": 60 },
           { "name": "Git / GitHub", "level": 90 },
-          { "name": "Agile / Scrum", "level": 80 }
+          { "name": "Agile / Scrum", "level": 80 },
+          { "name": "German (B1)", "level": 80 }
         ]
       }
     ]
@@ -184,32 +181,15 @@
     "viewBadge": "View on Credly",
     "viewPdf": "View Certificate",
     "viewDetails": "View details",
+    "moreTitle": "More certifications",
     "verifiedBadge": "Credly Verified",
     "issuedBy": "Issued by",
     "items": [
       {
-        "title": "Managing a Business Venture",
+        "title": "Ethical Hacker",
         "issuer": "Cisco Networking Academy",
-        "desc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management.",
-        "skills": ["Finance", "Accounting", "Team Building", "Business Structures", "Risk Management"]
-      },
-      {
-        "title": "Data Science Essentials with Python",
-        "issuer": "Cisco Networking Academy",
-        "desc": "Using Python and industry-standard libraries to explore, visualize and model data — applying analytical thinking and communicating insights through guided projects.",
-        "skills": ["Python", "Data Exploration", "Data Visualization", "Data Modeling", "Analytical Thinking"]
-      },
-      {
-        "title": "Prompt Like an Engineer",
-        "issuer": "Cisco Networking Academy",
-        "desc": "Applying an engineering mindset to prompts — designing, iterating, verifying and reusing them as a repeatable process; covers how chatbots and LLMs work, choosing between cloud and local AI tools while protecting sensitive data, and systematically evaluating AI output with a human in the lead.",
-        "skills": ["Prompt Design", "LLMs & Chatbots", "AI Tool Selection", "Data Privacy", "Output Evaluation"]
-      },
-      {
-        "title": "Introduction to Data Science",
-        "issuer": "Cisco Networking Academy",
-        "desc": "Broad understanding of the basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML job functions — with insight into career opportunities across various data roles.",
-        "skills": ["Data Analytics", "Data Engineering", "Data Science", "AI / ML", "Career Paths"]
+        "desc": "Student-level credential covering legal and compliance requirements, scoping and executing vulnerability assessments, and recommending mitigation strategies — with up to 34 hands-on activities using Kali Linux, WebSploit and other tools.",
+        "skills": ["Ethical Hacking", "Vulnerability Assessment", "Kali Linux", "Penetration Testing", "Risk Mitigation"]
       },
       {
         "title": "English for IT 1",
@@ -218,10 +198,28 @@
         "skills": ["Technical English", "IT Security Vocabulary", "Customer Support", "UX Terminology", "Grammar B2"]
       },
       {
-        "title": "Ethical Hacker",
+        "title": "Prompt Like an Engineer",
         "issuer": "Cisco Networking Academy",
-        "desc": "Student-level credential covering legal and compliance requirements, scoping and executing vulnerability assessments, and recommending mitigation strategies — with up to 34 hands-on activities using Kali Linux, WebSploit and other tools.",
-        "skills": ["Ethical Hacking", "Vulnerability Assessment", "Kali Linux", "Penetration Testing", "Risk Mitigation"]
+        "desc": "Applying an engineering mindset to prompts — designing, iterating, verifying and reusing them as a repeatable process; covers how chatbots and LLMs work, choosing between cloud and local AI tools while protecting sensitive data, and systematically evaluating AI output with a human in the lead.",
+        "skills": ["Prompt Design", "LLMs & Chatbots", "AI Tool Selection", "Data Privacy", "Output Evaluation"]
+      },
+      {
+        "title": "Data Science Essentials with Python",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Using Python and industry-standard libraries to explore, visualize and model data — applying analytical thinking and communicating insights through guided projects.",
+        "skills": ["Python", "Data Exploration", "Data Visualization", "Data Modeling", "Analytical Thinking"]
+      },
+      {
+        "title": "Managing a Business Venture",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Student-level credential covering strategic business management and operational planning — finance, accounting, team building, business structures and risk management.",
+        "skills": ["Finance", "Accounting", "Team Building", "Business Structures", "Risk Management"]
+      },
+      {
+        "title": "Introduction to Data Science",
+        "issuer": "Cisco Networking Academy",
+        "desc": "Broad understanding of the basic concepts of Data Analytics, Data Engineering, Data Science and AI/ML job functions — with insight into career opportunities across various data roles.",
+        "skills": ["Data Analytics", "Data Engineering", "Data Science", "AI / ML", "Career Paths"]
       }
     ]
   },
@@ -238,7 +236,8 @@
   },
   "footer": {
     "built": "Designed & Built by Ayat Mohamed",
-    "tagline": "Made in Morocco | Built for Germany"
+    "tagline": "Made in Morocco | Built for Germany",
+    "availability": "Available for work · Casablanca, Morocco · Updated November 2026"
   },
   "language": {
     "en": "EN",
